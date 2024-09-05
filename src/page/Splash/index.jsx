@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import * as S from "./style";
 import logo from "../../assets/logo.svg";
 import oring from "../../assets/oring.svg";
