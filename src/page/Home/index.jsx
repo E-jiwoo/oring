@@ -5,6 +5,7 @@ import oringE from "../../assets/oringE.svg";
 import logo from "../../assets/logo.svg";
 const index = () => {
   const navigate = useNavigate();
+  const username = "이지우";
   return (
     <>
       <S.Container>
@@ -15,8 +16,9 @@ const index = () => {
         <S.UserName>
           좋은 아침이에요,
           <br />
-          {userName} 님!
+          {username}님!
         </S.UserName>
+        <S.UserAmountBox></S.UserAmountBox>
       </S.Container>
     </>
   );

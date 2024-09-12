@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const Logo = styled.div`
   position: absolute;
-  top: 2rem;
+  top: 5rem;
   left: 2rem;
 `;
 
@@ -30,7 +30,18 @@ export const LogoText = styled.img`
 
 export const UserName = styled.div`
   position: relative;
-  font-size: 35;
-  top: 14rem;
-  left: 2.2rem;
+  color: "black";
+  font-size: 24px;
+  font-weight: 700;
+  top: 10rem;
+  right: 5rem;
+`;
+
+export const UserAmountBox = styled.div`
+  position: absolute;
+  width: 342px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  top: 15rem;
 `;
