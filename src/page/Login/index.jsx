@@ -11,11 +11,11 @@ const index = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const onClick = () => {
-    navigate(`/home`);
-  };
-
   const isFormFilled = email !== "" && password !== "";
+
+  const onClick = () => {
+    if (isFormFilled) navigate(`/home`);
+  };
 
   return (
     <>
