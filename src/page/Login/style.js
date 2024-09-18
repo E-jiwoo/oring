@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Contain = styled.div`
   position: absolute;
-  top: 10rem;
+  top: 4rem;
 `;
 
 export const Background = styled.div`
@@ -23,7 +23,7 @@ export const Background = styled.div`
   height: 100rem;
   border-radius: ${(props) => props.size / 2}%;
   z-index: 0;
-  top: 15rem;
+  top: 8rem;
 `;
 
 export const Input = styled.div`
@@ -63,7 +63,7 @@ export const Icon = styled.img`
 `;
 
 export const Text = styled.div`
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin-top: 1rem;
   text-align: center;
   font-family: "NanumSquare";
@@ -71,11 +71,12 @@ export const Text = styled.div`
 
 export const Welcome = styled.div`
   font-family: "LOTTERIACHAB";
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   -webkit-text-stroke: 1px black;
-  line-height: 2.8rem;
+  line-height: 2.5rem;
   color: white;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   text-align: center;
 `;
 
@@ -105,7 +106,7 @@ export const Login = styled.button`
   color: white;
   font-size: 1rem;
   cursor: ${(props) => (props.isFormFilled ? "pointer" : "default")};
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   display: flex;
   justify-content: center;
