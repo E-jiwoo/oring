@@ -66,6 +66,7 @@ export const Text = styled.div`
   font-size: 1rem;
   margin-top: 1rem;
   text-align: center;
+  font-family: "NanumSquare";
 `;
 
 export const Welcome = styled.div`
