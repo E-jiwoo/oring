@@ -7,7 +7,7 @@ const index = () => {
   const navigate = useNavigate();
 
   const onClick = () => {
-    if (isFormFilled) navigate(`/home`);
+    navigate(`/home`);
   };
 
   const menuItems = [
@@ -26,7 +26,7 @@ const index = () => {
   return (
     <>
       <S.Container>
-        <S.Arrow src={arrow} alt="arrow" />
+        <S.Arrow src={arrow} alt="arrow" onClick={onClick} />
         <S.Title>알림</S.Title>
         <S.AlarmList>
           {menuItems.map((alarm, index) => (

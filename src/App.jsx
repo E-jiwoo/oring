@@ -5,6 +5,7 @@ import Login from "./page/Login/index";
 import Splash from "./page/Splash/index";
 import Home from "./page/Home/index";
 import Alarm from "./page/Alarm/index";
+import Charge from "./page/Charge/index";
 import Bar from "./NavigationBar/index";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           )}
           <Route path="/home" element={<Home />}></Route>
           <Route path="/alarm" element={<Alarm />}></Route>
+          <Route path="/charge" element={<Charge />}></Route>
         </Routes>
       </BrowserRouter>
     </>
