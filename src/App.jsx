@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import Login from "./page/Login/index";
 import Splash from "./page/Splash/index";
 import Home from "./page/Home/index";
+import Bar from "./NavigationBar/index";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
