@@ -9,6 +9,7 @@ import picnicImg from "../../assets/picnic.jpg";
 
 const index = () => {
   const navigate = useNavigate();
+
   const username = "이지우";
   const amount = 100;
 
@@ -19,13 +20,16 @@ const index = () => {
     { name: "샌드위치", img: picnicImg, price: 100, num: 10 },
   ];
 
+  const onClick = () => {
+    navigate(`/alarm`);
+  };
   return (
     <>
       <S.Container>
         <S.Logo>
           <S.LogoImg src={logo} alt="logo" />
           <S.LogoText src={oringE} alt="oringE" />
-          <S.Alarm src={alarm} alt="alarm" />
+          <S.Alarm src={alarm} alt="alarm" onClick={onClick} />
         </S.Logo>
         <S.UserName>
           좋은 아침이에요,
