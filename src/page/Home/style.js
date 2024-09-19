@@ -45,3 +45,25 @@ export const UserAmountBox = styled.div`
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   top: 15rem;
 `;
+
+export const AmountText = styled.div`
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: left;
+  padding-left: 1.7rem;
+  font-family: "NanumSquareR";
+`;
+export const Arrow = styled.img`
+  position: relative;
+  width: 8px;
+  height: 12px;
+  top: 0.05rem;
+  padding-left: 1rem;
+`;
+export const Amount = styled.div`
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+  text-align: left;
+  padding-left: 1.7rem;
+  font-family: "NanumSquareEB";
+`;
