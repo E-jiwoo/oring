@@ -12,14 +12,13 @@ export const Container = styled.div`
 
 export const Logo = styled.div`
   position: relative;
-  margin-top: 2rem;
-  right: 6.7rem;
+  margin-top: 3rem;
 `;
 
 export const Alarm = styled.img`
   position: relative;
-  margin-top: 2rem;
-  right: 6.7rem;
+  bottom: 0.3rem;
+  padding-left: 12.5rem;
 `;
 export const LogoImg = styled.img`
   position: relative;
