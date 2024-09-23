@@ -92,6 +92,8 @@ export const RecommedText2 = styled.div`
 `;
 
 export const MenuList = styled.div`
+  position: relative;
+  left: 1.5rem;
   display: flex;
   gap: 1rem;
   overflow-x: auto;
