@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
+import Header from "./Header/index";
 import Login from "./page/Login/index";
 import Splash from "./page/Splash/index";
 import Home from "./page/Home/index";
 import Alarm from "./page/Alarm/index";
 import Charge from "./page/Charge/index";
+import Items from "./page/Items/index";
 import Bar from "./NavigationBar/index";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
     <>
       <GlobalStyle />
       <BrowserRouter>
+        <Header />
         <Routes>
           {showSplash ? (
             <Route path="/" element={<Splash />} />
@@ -32,6 +35,7 @@ function App() {
           <Route path="/home" element={<Home />}></Route>
           <Route path="/alarm" element={<Alarm />}></Route>
           <Route path="/charge" element={<Charge />}></Route>
+          <Route path="/items" element={<Items />}></Route>
         </Routes>
       </BrowserRouter>
     </>

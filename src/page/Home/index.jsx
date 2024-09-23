@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import * as S from "./style";
 import oringE from "../../assets/oringE.svg";
 import logo from "../../assets/logo.svg";
@@ -8,8 +7,6 @@ import alarm from "../../assets/alarm.svg";
 import picnicImg from "../../assets/picnic.jpg";
 
 const index = () => {
-  const navigate = useNavigate();
-
   const username = "이지우";
   const amount = 100;
 
@@ -19,18 +16,9 @@ const index = () => {
     { name: "콜라", img: picnicImg, price: 100, num: 10 },
     { name: "샌드위치", img: picnicImg, price: 100, num: 10 },
   ];
-
-  const onClick = () => {
-    navigate(`/alarm`);
-  };
   return (
     <>
       <S.Container>
-        <S.Logo>
-          <S.LogoImg src={logo} alt="logo" />
-          <S.LogoText src={oringE} alt="oringE" />
-          <S.Alarm src={alarm} alt="alarm" onClick={onClick} />
-        </S.Logo>
         <S.UserName>
           좋은 아침이에요,
           <br />

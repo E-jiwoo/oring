@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  padding-top: 5rem;
 `;
 
 export const Logo = styled.div`

@@ -1,15 +1,7 @@
 import { React, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import * as S from "./style";
-import arrow from "../../assets/arrow_gray.svg";
 
 const index = () => {
-  const navigate = useNavigate();
-
-  const onClick = () => {
-    navigate(`/home`);
-  };
-
   const menuItems = [
     {
       title: "{item.name}이 품절 직전이에요!",
@@ -26,7 +18,6 @@ const index = () => {
   return (
     <>
       <S.Container>
-        <S.Arrow src={arrow} alt="arrow" onClick={onClick} />
         <S.Title>알림</S.Title>
         <S.AlarmList>
           {menuItems.map((alarm, index) => (

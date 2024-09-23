@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 5rem;
 `;
 
 export const Arrow = styled.img`
