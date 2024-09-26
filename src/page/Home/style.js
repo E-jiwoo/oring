@@ -93,13 +93,14 @@ export const RecommedText2 = styled.div`
 
 export const MenuList = styled.div`
   position: relative;
-  left: 1.5rem;
+  left: 1rem;
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   white-space: nowrap;
   padding: 1rem 0;
   width: 100%;
+  padding-left: 1.5rem;
   &::-webkit-scrollbar {
     display: none;
   }
