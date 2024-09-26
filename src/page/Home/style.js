@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
+  justify-content: center;
 `;
 
 export const Logo = styled.div`
@@ -20,6 +20,7 @@ export const Alarm = styled.img`
   bottom: 0.3rem;
   padding-left: 12.5rem;
 `;
+
 export const LogoImg = styled.img`
   position: relative;
   width: 32px;
@@ -44,7 +45,6 @@ export const UserName = styled.div`
 `;
 
 export const UserAmountBox = styled.div`
-  position: relative;
   width: 342px;
   height: 80px;
   border-radius: 8px;
