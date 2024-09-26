@@ -17,7 +17,11 @@ export const Logo = styled.img`
   position: relative;
   top: 1rem;
 `;
-export const Oring = styled.img`
+export const Oring = styled.div`
   position: relative;
   top: 1rem;
+  font-family: "LOTTERIACHAB";
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke: 2px black;
 `;

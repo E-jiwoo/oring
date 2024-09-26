@@ -10,7 +10,7 @@ const index = () => {
       <S.Container>
         <S.Contain>
           <S.Logo src={logo} alt="logo" />
-          <S.Oring src={oring} alt="oring" />
+          <S.Oring>오링</S.Oring>
         </S.Contain>
       </S.Container>
     </>
