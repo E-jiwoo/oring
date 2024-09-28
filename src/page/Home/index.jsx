@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./style";
+import { useNavigate } from "react-router-dom";
 import oringE from "../../assets/oringE.svg";
 import logo from "../../assets/logo.svg";
 import arrow from "../../assets/arrow.svg";
@@ -7,8 +8,13 @@ import alarm from "../../assets/alarm.svg";
 import picnicImg from "../../assets/picnic.jpg";
 
 const index = () => {
+  const navigate = useNavigate();
   const username = "이지우";
   const amount = 100;
+
+  const onCharge = () => {
+    navigate(`/charge`);
+  };
 
   const menuItems = [
     { name: "피크닉 청포도맛", img: picnicImg, price: 100, num: 10 },
@@ -24,7 +30,7 @@ const index = () => {
           <br />
           {username}님!
         </S.UserName>
-        <S.UserAmountBox>
+        <S.UserAmountBox onClick={onCharge}>
           <S.AmountText>
             현재 사용 가능한 금액
             <S.Arrow src={arrow} alt="arrow" />
