@@ -1,11 +1,8 @@
 import React from "react";
 import * as S from "./style";
 import { useNavigate } from "react-router-dom";
-import oringE from "../../assets/oringE.svg";
-import logo from "../../assets/logo.svg";
 import arrow from "../../assets/arrow.svg";
-import alarm from "../../assets/alarm.svg";
-import picnicImg from "../../assets/picnic.jpg";
+import picnicImg from "../../assets/items/picnic_red.jpg";
 
 const index = () => {
   const navigate = useNavigate();
