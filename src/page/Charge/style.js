@@ -31,7 +31,7 @@ export const UserInfo = styled.div`
   font-size: 16px;
   font-family: "NanumSquareB";
   margin-top: 1rem;
-  right: 3.7rem;
+  right: 3rem;
 `;
 export const UserAmount = styled.div`
   position: relative;
