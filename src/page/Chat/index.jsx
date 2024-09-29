@@ -59,21 +59,11 @@ const ChatPage = () => {
         isUser: false,
         profilePic: logo, // 상대방 프로필 이미지
         nickname: "공간 AriSori", // 상대방 닉네임
-        text: `안녕하세요~! 매점 아리소리입니다
-              <br />
-              <br />
-              자주 묻는 질문은 텍스트창 위의 <br />
-              자주 묻는 질문 버튼을 눌러주시길 바랍니다 <br />
-              <br />
-              매점부원들은 휴대폰을 공식적으로 되찾는
-              <br />
-              오후 4시 반 이후부터 정상적으로 문의 확인
-              <br />
-              이 가능합니다!
-              <br />
-              <br />
-              답장하는 매점부원은 랜덤이오니 <br />이 점 참고해주시길
-              부탁드립니다!`, // 기본 메시지 추가
+        text: `안녕하세요 매점 아리소리입니다!<br/><br/>
+
+문의 확인은 매점부원들이 휴대폰을 공<br/>식적으로 되찾는 오후 4시 반 이후부터<br/> 가능합니다.<br/><br/> 
+
+답장하는 매점부원은 정해져 있지 않으<br/>니 이 점 유의 부탁드립니다 :)`, // 기본 메시지 추가
       },
     ]);
   }, []);
@@ -102,6 +92,7 @@ const ChatPage = () => {
           <S.Plus src={plus} alt="plus" onClick={toggleSidebar} />
         </S.Icons>
       </S.Header>
+      {isOpen && <S.Overlay />} {/* Render the overlay when sidebar is open */}
       {isOpen && (
         <S.Sidebar ref={sidebarRef}>
           <S.NewChatBtn onClick={Refresh}>새 채팅하기</S.NewChatBtn>

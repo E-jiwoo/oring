@@ -51,7 +51,8 @@ export const ChatContainer = styled.div`
   padding: 1rem;
   margin-top: 0rem; // To avoid overlap with header
   overflow-y: auto; // Enable scrolling
-  background-color: white; // Light background for chat area
+  background-color: white;
+  margin-left: 0.5rem; // Light background for chat area
 `;
 
 export const MessageContainer = styled.div`
@@ -88,7 +89,7 @@ export const InputContainer = styled.div`
   width: 100%;
   padding: 10px;
   background-color: white;
-  bottom: 8.5rem;
+  bottom: 10rem;
 `;
 
 export const InputContainerWrapper = styled.div`
@@ -189,4 +190,14 @@ export const ListText = styled.div`
   font-family: "NanumSquareB";
   padding-left: 1rem;
   flex-grow: 1;
+`;
+
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25); // Black with 25% opacity
+  z-index: 1; // Ensure it sits below the sidebar but above other content
 `;
