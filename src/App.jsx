@@ -8,6 +8,8 @@ import Home from "./page/Home/index";
 import Alarm from "./page/Alarm/index";
 import Charge from "./page/Charge/index";
 import Items from "./page/Items/index";
+import Detail from "./page/Detail/index";
+import Mypage from "./page/Mypage/index";
 import Bar from "./NavigationBar/index";
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Route path="/alarm" element={<Alarm />}></Route>
           <Route path="/charge" element={<Charge />}></Route>
           <Route path="/items" element={<Items />}></Route>
+          <Route path="/detail" element={<Detail />}></Route>
+          <Route path="/mypage" element={<Mypage />}></Route>
         </Routes>
       </BrowserRouter>
     </>

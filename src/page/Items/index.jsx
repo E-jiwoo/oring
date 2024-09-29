@@ -15,15 +15,15 @@ const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState("전체");
 
   const Items = [
-    { name: "매일_피크닛_사과맛", img: picnic_red, price: 700, num: 10 },
-    { name: "매일_피크닛_청포도맛", img: picnic_green, price: 700, num: 10 },
-    { name: "사조_오양_고기포자만두", img: meat, price: 2000, num: 10 },
-    { name: "사조_오양_김치포자만두", img: kimchi, price: 2000, num: 10 },
+    { name: "매일_피크닛_사과맛", img: picnic_red, price: 700, num: 50 },
+    { name: "매일_피크닛_청포도맛", img: picnic_green, price: 700, num: 48 },
+    { name: "사조_고기포자만두", img: meat, price: 2000, num: 20 },
+    { name: "사조_김치포자만두", img: kimchi, price: 2000, num: 22 },
     { name: "롯데_월드콘_바닐라맛", img: worldcon_red, price: 1400, num: 10 },
-    { name: "롯데_월드콘_쿠앤크맛", img: worldcon_blue, price: 1400, num: 10 },
-    { name: "웅진_가야농장_알로에", img: alloa, price: 1300, num: 10 },
-    { name: "롯데_구구콘_오리지널맛", img: con, price: 1400, num: 10 },
-    { name: "빙그레_슈퍼콘_초코맛", img: supercon_red, price: 1400, num: 10 },
+    { name: "롯데_월드콘_쿠앤크맛", img: worldcon_blue, price: 1400, num: 13 },
+    { name: "웅진_가야농장_알로에", img: alloa, price: 1300, num: 38 },
+    { name: "롯데_구구콘_오리지널", img: con, price: 1400, num: 7 },
+    { name: "빙그레_슈퍼콘_초코맛", img: supercon_red, price: 1400, num: 15 },
   ];
 
   return (
