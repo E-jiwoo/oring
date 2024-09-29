@@ -26,7 +26,7 @@ export const Plus = styled.img`
   position: relative;
   margin-bottom: 0.15rem;
   right: 9rem;
-  padding-left: 18rem;
+  padding-left: 20rem;
 `;
 
 export const Sidebar = styled.div`
@@ -88,6 +88,7 @@ export const InputContainer = styled.div`
   width: 100%;
   padding: 10px;
   background-color: white;
+  bottom: 8.5rem;
 `;
 
 export const InputContainerWrapper = styled.div`

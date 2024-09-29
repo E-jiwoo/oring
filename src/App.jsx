@@ -11,6 +11,7 @@ import Items from "./page/Items/index";
 import Detail from "./page/Detail/index";
 import Mypage from "./page/Mypage/index";
 import Opinion from "./page/Opinion/index";
+import Conference from "./page/Conference/index";
 import Chat from "./page/Chat/index";
 import Footer from "./Footer/index";
 
@@ -44,7 +45,8 @@ function App() {
           <Route path="/detail" element={<Detail />}></Route>
           <Route path="/mypage" element={<Mypage />}></Route>
           <Route path="/opinion" element={<Opinion />}></Route>
-          <Route path="/Chat" element={<Chat />}></Route>
+          <Route path="/chat" element={<Chat />}></Route>
+          <Route path="/conference" element={<Conference />}></Route>
         </Routes>
       </BrowserRouter>
     </>
