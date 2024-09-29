@@ -12,12 +12,14 @@ const Header = () => {
   const onAlarm = () => {
     navigate(`/alarm`);
   };
-  const onHome = () => {
-    navigate(`/home`);
+  const onBack = () => {
+    navigate(-1);
   };
   return (
     <>
-      {location.pathname === "/home" || location.pathname === "/mypage" ? (
+      {location.pathname === "/home" ||
+      location.pathname === "/mypage" ||
+      location.pathname === "/opinion" ? (
         <S.Header>
           <S.Logo>
             <S.LogoImg src={logo} alt="logo" />
@@ -29,7 +31,7 @@ const Header = () => {
         location.pathname === "/charge" ||
         location.pathname === "/account" ? (
         <S.Header>
-          <S.Arrow src={arrow} alt="arrow" onClick={onHome} />
+          <S.Arrow src={arrow} alt="arrow" onClick={onBack} />
         </S.Header>
       ) : location.pathname == "/items" ? (
         <S.Header>

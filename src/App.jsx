@@ -10,6 +10,8 @@ import Charge from "./page/Charge/index";
 import Items from "./page/Items/index";
 import Detail from "./page/Detail/index";
 import Mypage from "./page/Mypage/index";
+import Opinion from "./page/Opinion/index";
+import Chat from "./page/Chat/index";
 import Bar from "./NavigationBar/index";
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
           <Route path="/items" element={<Items />}></Route>
           <Route path="/detail" element={<Detail />}></Route>
           <Route path="/mypage" element={<Mypage />}></Route>
+          <Route path="/opinion" element={<Opinion />}></Route>
+          <Route path="/Chat" element={<Chat />}></Route>
         </Routes>
       </BrowserRouter>
     </>

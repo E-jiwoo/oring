@@ -90,12 +90,11 @@ export const RecommedText2 = styled.div`
   right: 5.5rem;
   font-family: "NanumSquareEB";
 `;
-
 export const MenuList = styled.div`
   position: relative;
-  left: 1rem;
   display: flex;
   gap: 1rem;
+  left: 1rem;
   overflow-x: auto;
   white-space: nowrap;
   padding: 1rem 0;
@@ -108,7 +107,7 @@ export const MenuList = styled.div`
 
 export const MenuBox = styled.div`
   position: relative;
-  width: 120px;
+  min-width: 120px;
   height: 160px;
   border-radius: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
@@ -131,7 +130,7 @@ export const MenuItem = styled.div`
   font-family: "NanumSquareEB";
   text-align: left;
   margin-top: 0.3rem;
-  left: 1rem;
+  left: 0.7rem;
   width: 100%;
 `;
 
@@ -141,6 +140,6 @@ export const MenuPrice = styled.div`
   font-family: "NanumSquareL";
   text-align: left;
   margin-top: 0.3rem;
-  left: 1rem;
+  left: 0.7rem;
   width: 100%;
 `;

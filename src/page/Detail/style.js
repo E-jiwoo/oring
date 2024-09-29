@@ -22,13 +22,13 @@ export const Icon = styled.div`
 export const Arrow = styled.img`
   position: relative;
   bottom: 0.3rem;
-  padding-left: 15rem;
+  padding-left: 14.5rem;
 `;
 
 export const Fix = styled.img`
   position: relative;
   bottom: 0.3rem;
-  padding-left: 16.5rem;
+  padding-left: 17rem;
 `;
 
 export const ItemImg = styled.img`
@@ -52,7 +52,7 @@ export const ItemName = styled.div`
   font-size: 24px;
   font-family: "NanumSquareEB";
   text-align: left;
-  padding-top: 2rem;
+  padding-top: 3rem;
 `;
 
 export const ItemPrice = styled.div`
@@ -69,7 +69,7 @@ export const Inventory = styled.div`
   font-size: 16px;
   font-family: "NanumSquareEB";
   text-align: left;
-  padding-top: 1rem;
+  padding-top: 2rem;
 `;
 
 export const ItemInventory = styled.div`
@@ -87,33 +87,16 @@ export const Num = styled.div`
 export const Date = styled.div`
   color: #999999;
 `;
-
-export const Explain = styled.div`
-  position: relative;
-  font-size: 14px;
-  font-family: "NanumSquareEB";
-  text-align: left;
-  padding-top: 1rem;
-`;
-
-export const ItemExplain = styled.div`
-  position: relative;
-  font-size: 12px;
-  font-family: "NanumSquareR";
-  text-align: left;
-  padding-top: 0.3rem;
-`;
-
 export const RecommendBox = styled.div`
   width: 100%;
   height: 469px;
-  background-color: #cccccc;
+  background-color: white;
 `;
 
 export const RecommedText = styled.div`
   position: relative;
   font-size: 0.9rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
   text-align: left;
   left: 2rem;
   font-family: "NanumSquareEB";

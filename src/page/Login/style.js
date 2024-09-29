@@ -109,6 +109,7 @@ export const Login = styled.button`
   margin-top: 1rem;
   text-align: center;
   display: flex;
+  font-family: "NanumSquareR";
   justify-content: center;
   align-items: center;
 `;

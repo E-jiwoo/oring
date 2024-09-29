@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./style";
+import { useNavigate } from "react-router-dom";
 import picnic_red from "../../assets/items/picnic_red.jpg";
 import picnic_green from "../../assets/items/picnic_green.jpg";
 import meat from "../../assets/items/meat.jpg";
@@ -11,8 +12,13 @@ import con from "../../assets/items/99con.jpg";
 import supercon_red from "../../assets/items/supercon_red.jpg";
 
 const Index = () => {
+  const navigate = useNavigate();
   const menuItems = ["전체", "과자", "음료", "아이스크림", "생필품"];
   const [selectedCategory, setSelectedCategory] = useState("전체");
+
+  const onDetail = () => {
+    navigate(`/detail`);
+  };
 
   const Items = [
     { name: "매일_피크닛_사과맛", img: picnic_red, price: 700, num: 50 },
@@ -44,7 +50,7 @@ const Index = () => {
       </S.CategoryList>
       <S.MenuList>
         {Items.map((item, index) => (
-          <S.MenuBox key={index}>
+          <S.MenuBox key={index} onClick={onDetail}>
             <S.MenuImg src={item.img} alt={item.name} />
             <S.MenuContent>
               <S.MenuItem>{item.name}</S.MenuItem>

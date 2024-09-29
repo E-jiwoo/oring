@@ -51,8 +51,6 @@ const index = () => {
               <S.Num>48개 </S.Num>&nbsp;
               <S.Date>· 2024.07.09 기준</S.Date>
             </S.ItemInventory>
-            <S.Explain>제품 설명</S.Explain>
-            <S.ItemExplain>ㅁ어ㅏㄹ;ㅏㅁㄴ얼;ㅏ먼ㅇ;리ㅏㅓ</S.ItemExplain>
           </S.Contain>
         </S.DetailBox>
         <S.RecommendBox>
