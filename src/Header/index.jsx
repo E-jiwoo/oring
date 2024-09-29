@@ -15,6 +15,9 @@ const Header = () => {
   const onBack = () => {
     navigate(-1);
   };
+  const onHome = () => {
+    navigate(`/home`);
+  };
   return (
     <>
       {location.pathname === "/home" ||
@@ -23,8 +26,8 @@ const Header = () => {
       location.pathname === "/conference" ? (
         <S.Header>
           <S.Logo>
-            <S.LogoImg src={logo} alt="logo" />
-            <S.LogoText src={oringE} alt="oringE" />
+            <S.LogoImg src={logo} alt="logo" onClick={onHome} />
+            <S.LogoText src={oringE} alt="oringE" onClick={onHome} />
             <S.Alarm src={alarm} alt="alarm" onClick={onAlarm} />
           </S.Logo>
         </S.Header>

@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./style";
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import setting from "../../assets/setting.svg";
 import conference from "../../assets/conference.svg";
@@ -8,6 +9,10 @@ import help from "../../assets/help.svg";
 import arrow from "../../assets/arrow2.svg";
 
 const index = () => {
+  const navigate = useNavigate();
+  const onConference = () => {
+    navigate(`/conference`);
+  };
   return (
     <>
       <S.Container>
@@ -19,7 +24,7 @@ const index = () => {
             <S.ListText>정보 수정</S.ListText>
             <S.Arrow src={arrow} alt="arrow" />
           </S.Box>
-          <S.Box>
+          <S.Box onClick={onConference}>
             <S.ListIcon src={conference} alt="conference" />
             <S.ListText>총회</S.ListText>
             <S.Arrow src={arrow} alt="arrow" />
