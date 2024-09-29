@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // useEffect 추가
+import React, { useState, useEffect, useRef } from "react"; // useRef 추가
 import { useNavigate } from "react-router-dom";
 import * as S from "./style";
 import arrow from "../../assets/arrow_gray.svg";
@@ -6,13 +6,14 @@ import plus from "../../assets/plus.svg";
 import send_off from "../../assets/send_off.svg"; // 추가: send_off 이미지 import
 import send_on from "../../assets/send_on.svg"; // 추가: send_on 이미지 import
 import chat_plus from "../../assets/chat_plus.svg";
-import logo from "../../assets/logo.svg"; // 상대방 프로필 이미지 추가
+import logo from "../../assets/happyoring.svg"; // 상대방 프로필 이미지 추가
 
 const ChatPage = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]); // State for chat messages
   const [inputValue, setInputValue] = useState(""); // State for input value
+  const sidebarRef = useRef(null); // Create a ref for the sidebar
 
   const onBack = () => {
     navigate(-1);
@@ -20,7 +21,10 @@ const ChatPage = () => {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
-    navigate(`/chat`);
+  };
+
+  const Refresh = () => {
+    window.location.reload();
   };
 
   const handleSendMessage = () => {
@@ -74,6 +78,22 @@ const ChatPage = () => {
     ]);
   }, []);
 
+  // Close sidebar when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    // Add event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Cleanup event listener
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [sidebarRef]);
+
   return (
     <>
       <S.Header>
@@ -83,8 +103,24 @@ const ChatPage = () => {
         </S.Icons>
       </S.Header>
       {isOpen && (
-        <S.Sidebar>
-          <S.NewChatBtn onClick={toggleSidebar}>새 채팅하기</S.NewChatBtn>
+        <S.Sidebar ref={sidebarRef}>
+          <S.NewChatBtn onClick={Refresh}>새 채팅하기</S.NewChatBtn>
+          <S.ListBox>
+            <S.Text>오늘</S.Text>
+            <S.Box>
+              <S.ListText>민트초코 아이스크림은 언제 들어오나요?</S.ListText>
+            </S.Box>
+            <S.Text>어제</S.Text>
+            <S.Box>
+              <S.ListText>매점 문 언제 열어요?</S.ListText>
+            </S.Box>
+            <S.Box>
+              <S.ListText>민트초코 먹고 싶어요ㅠㅠ</S.ListText>
+            </S.Box>
+            <S.Box>
+              <S.ListText>매점부 들어가고 싶은데 어떻게하면 ...</S.ListText>
+            </S.Box>
+          </S.ListBox>
         </S.Sidebar>
       )}
       <S.ChatContainer>

@@ -33,7 +33,7 @@ export const Sidebar = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 300px; // Width when open
   height: 100%;
   background-color: white;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
@@ -63,13 +63,14 @@ export const MessageContainer = styled.div`
 
 export const Message = styled.div`
   position: relative;
+  font-family: "NanumSquareR";
   background-color: ${(props) =>
     props.isUser
       ? "#F49E15"
       : "white"}; // Change background color based on sender
   color: ${(props) => (props.isUser ? "white" : "black")};
   border-radius: 18px;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   margin: 5px 0;
   max-width: 70%;
@@ -132,8 +133,8 @@ export const Profile = styled.div`
 `;
 
 export const ProfilePic = styled.img`
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
 `;
 
 export const Nickname = styled.div`
@@ -156,4 +157,35 @@ export const NewChatBtn = styled.button`
   font-family: "NanumSquareR";
   justify-content: center;
   align-items: center;
+`;
+
+export const ListBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  gap: 0.5rem;
+`;
+
+export const Box = styled.div`
+  width: 360px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Text = styled.div`
+  font-size: 12px;
+  font-family: "NanumSquareR";
+  padding-left: 1rem;
+  flex-grow: 1;
+`;
+
+export const ListText = styled.div`
+  font-size: 14px;
+  font-family: "NanumSquareB";
+  padding-left: 1rem;
+  flex-grow: 1;
 `;

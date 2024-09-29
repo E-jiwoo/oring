@@ -12,7 +12,7 @@ import Detail from "./page/Detail/index";
 import Mypage from "./page/Mypage/index";
 import Opinion from "./page/Opinion/index";
 import Chat from "./page/Chat/index";
-import Bar from "./NavigationBar/index";
+import Footer from "./Footer/index";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -30,6 +30,7 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Header />
+        <Footer />
         <Routes>
           {showSplash ? (
             <Route path="/" element={<Splash />} />
