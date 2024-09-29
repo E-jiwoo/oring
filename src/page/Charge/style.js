@@ -24,12 +24,13 @@ export const UserAmountBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5rem;
 `;
 export const UserInfo = styled.div`
   position: relative;
   font-size: 16px;
   font-family: "NanumSquareB";
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   right: 3.7rem;
 `;
 export const UserAmount = styled.div`
@@ -73,7 +74,7 @@ export const HistoryBox = styled.div`
 export const DayBox = styled.div`
   position: relative;
   width: 100vw;
-  height: 48px;
+  height: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,12 +91,13 @@ export const Day = styled.div`
 export const PayBox = styled.div`
   position: relative;
   width: 100vw;
-  height: 48px;
+  height: 53px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
+  padding-left: 5rem;
 `;
 
 export const PayContain = styled.div`
@@ -103,10 +105,11 @@ export const PayContain = styled.div`
 `;
 
 export const PayTitle = styled.div`
-  position: relative;
+  position: fixed;
   color: black;
   font-size: 12px;
-  right: 3rem;
+  right: 15rem;
+  left: 7rem;
   width: auto;
   text-align: left;
   white-space: nowrap;
@@ -115,23 +118,24 @@ export const PayTitle = styled.div`
 `;
 
 export const PayTime = styled.div`
-  position: relative;
+  position: fixed;
   font-size: 12px;
-  right: 9rem;
+  right: 23.8rem;
   font-family: "NanumSquareB";
 `;
 
 export const AmountContain = styled.div`
   position: fixed;
   display: flex;
-  left: 15.5rem;
+  text-align: right;
+  right: 8.5rem;
 `;
 
 export const PayText = styled.div`
   position: relative;
   color: #999999;
   font-size: 12px;
-  left: 2.5rem;
+  left: 2.3rem;
   font-family: "NanumSquareB";
 `;
 

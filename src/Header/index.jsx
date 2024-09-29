@@ -25,7 +25,9 @@ const Header = () => {
             <S.Alarm src={alarm} alt="alarm" onClick={onAlarm} />
           </S.Logo>
         </S.Header>
-      ) : location.pathname === "/alarm" || location.pathname === "/account" ? (
+      ) : location.pathname === "/alarm" ||
+        location.pathname === "/charge" ||
+        location.pathname === "/account" ? (
         <S.Header>
           <S.Arrow src={arrow} alt="arrow" onClick={onHome} />
         </S.Header>
