@@ -36,7 +36,7 @@ export const AlarmBox = styled.div`
   height: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; // Align items to the start (left)
   justify-content: center;
   background-color: white;
   margin-top: 1.5rem;
@@ -50,12 +50,12 @@ export const AlarmTitle = styled.div`
   position: relative;
   color: black;
   font-size: 12px;
-  right: 4rem;
   width: auto;
-  text-align: left;
+  text-align: left; // Ensure text is left-aligned
   white-space: nowrap;
   overflow: hidden;
   font-family: "NanumSquareB";
+  margin-left: 3rem;
 `;
 
 export const AlarmText = styled.div`
@@ -63,8 +63,9 @@ export const AlarmText = styled.div`
   color: black;
   font-size: 10px;
   margin-top: 0.5rem;
-  right: 4rem;
   font-family: "NanumSquareL";
+  margin-left: 3rem;
+  text-align: left; // Ensure text is left-aligned
 `;
 
 export const AlarmTime = styled.div`
@@ -72,5 +73,6 @@ export const AlarmTime = styled.div`
   color: #999999;
   font-size: 12px;
   left: 20rem;
+  text-align: right;
   font-family: "NanumSquareB";
 `;

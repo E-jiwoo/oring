@@ -39,13 +39,13 @@ const Header = () => {
         </S.Header>
       ) : location.pathname == "/items" ? (
         <S.Header>
-          <S.Logo>
+          <S.Logo2>
             <S.LogoImg src={logo} alt="logo" />
             <S.LogoText src={oringE} alt="oringE" />
-            <S.PlusBtn>
+            {/*<S.PlusBtn>
               <S.Btn>재고 추가</S.Btn>
-            </S.PlusBtn>
-          </S.Logo>
+            </S.PlusBtn>*/}
+          </S.Logo2>
         </S.Header>
       ) : null}
     </>

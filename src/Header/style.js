@@ -17,6 +17,13 @@ export const Logo = styled.div`
   flex-direction: row;
   margin-top: 3rem;
 `;
+export const Logo2 = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-right: 13.5rem;
+`;
 
 export const Alarm = styled.img`
   position: relative;
