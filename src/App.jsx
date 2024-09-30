@@ -17,6 +17,8 @@ import Chat from "./page/Chat/index";
 import Chat_2 from "./page/Chat_2/index";
 import Insert from "./page/Insert/index";
 import Insert_2 from "./page/Insert_2/index";
+import Cam from "./page/Cam/index";
+import Conference_2 from "./page/Conference_2/index";
 import Footer from "./Footer/index";
 
 function App() {
@@ -53,8 +55,10 @@ function App() {
           <Route path="/chat" element={<Chat />}></Route>
           <Route path="/chat_2" element={<Chat_2 />}></Route>
           <Route path="/conference" element={<Conference />}></Route>
+          <Route path="/conference_2" element={<Conference_2 />}></Route>
           <Route path="/insert" element={<Insert />}></Route>
           <Route path="/insert_2" element={<Insert_2 />}></Route>
+          <Route path="/cam" element={<Cam />}></Route>
         </Routes>
       </BrowserRouter>
     </>

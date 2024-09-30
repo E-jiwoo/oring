@@ -26,6 +26,7 @@ const Footer = () => {
     "/chat_2",
     "/insert",
     "/insert_2",
+    "/cam",
   ];
 
   // Check if the current path is one of the specified paths
@@ -49,7 +50,9 @@ const Footer = () => {
             <S.Icon
               src={
                 location.pathname === "/items" ||
-                location.pathname === "/detail"
+                location.pathname === "/detail" ||
+                location.pathname === "/insert" ||
+                location.pathname === "/insert_2"
                   ? item_on
                   : item_off
               }

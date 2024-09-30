@@ -26,7 +26,7 @@ const Index = () => {
           <S.Text>
             상품명<S.Color>*</S.Color>
           </S.Text>
-          <S.Input placeholder="입고할 상품명을 입력해주세요."></S.Input>
+          <S.Input placeholder="상품의 바코드를 입력해주세요."></S.Input>
           <S.Text>부가 사항</S.Text>
           <S.Input placeholder="부가사항을 입력해주세요. "></S.Input>
           <S.Text>

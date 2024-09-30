@@ -124,7 +124,7 @@ const ChatPage = () => {
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="매점부에게 질문을 남겨주세요!"
+            placeholder="친절한 답변을 남겨주세요!"
           />
           <S.SendIcon
             src={inputValue.trim() ? send_on : send_off} // 변경: inputValue에 따라 아이콘 변경

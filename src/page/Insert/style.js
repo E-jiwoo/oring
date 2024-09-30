@@ -62,6 +62,19 @@ export const Text = styled.div`
   padding-top: 1rem;
 `;
 
+export const Item = styled.div`
+  font-size: 16px;
+  color: #999999;
+  line-height: 24px;
+  font-family: "NanumSquareR";
+  text-align: left;
+  position: absolute; // Change to absolute positioning
+  bottom: 12rem; // Adjust as needed to position it correctly
+  left: 25px; // Adjust left position as needed
+  right: 20px; // Adjust right position as needed
+  z-index: 1; // Ensure it appears above other elements
+`;
+
 export const InputContainer = styled.div`
   display: flex;
   align-items: center; // Center icons vertically with the input
@@ -121,5 +134,5 @@ export const OtherBtn = styled.button`
   font-family: "NanumSquareR";
   justify-content: center;
   align-items: center;
-  margin-bottom: 9.5rem;
+  margin-bottom: 10rem;
 `;

@@ -14,8 +14,8 @@ import supercon_red from "../../assets/items/supercon_red.jpg";
 
 const index = () => {
   const navigate = useNavigate();
-  const username = "이예흔";
-  const amount = 5400;
+  const username = "박강은";
+  const amount = 1400;
 
   const onCharge = () => {
     navigate(`/charge`);

@@ -29,7 +29,9 @@ const Header = () => {
       location.pathname === "/conference" ||
       location.pathname === "/opinion_2" ||
       location.pathname === "/insert" ||
-      location.pathname === "/insert_2" ? (
+      location.pathname === "/insert_2" ||
+      location.pathname === "/cam" ||
+      location.pathname === "/conference_2" ? (
         <S.Header>
           <S.Logo>
             <S.LogoImg src={logo} alt="logo" onClick={onHome} />

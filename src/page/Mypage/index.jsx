@@ -11,7 +11,7 @@ import arrow from "../../assets/arrow2.svg";
 const index = () => {
   const navigate = useNavigate();
   const onConference = () => {
-    navigate(`/conference`);
+    navigate(`/conference_2`);
   };
   return (
     <>
