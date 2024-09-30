@@ -17,7 +17,7 @@ const index = () => {
     <>
       <S.Container>
         <S.Profile src={logo} alt="logo" />
-        <S.UserName>이예흔</S.UserName>
+        <S.UserName>박강은</S.UserName>
         <S.ListBox>
           <S.Box>
             <S.ListIcon src={setting} alt="setting" />

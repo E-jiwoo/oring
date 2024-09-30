@@ -18,19 +18,18 @@ export const Icon = styled.div`
   display: flex;
   flex-direction: row;
 `;
-
+/*
 export const Arrow = styled.img`
   position: relative;
   bottom: 0.3rem;
   padding-right: 5rem;
 `;
-/*
+*/
 export const Arrow = styled.img`
   position: relative;
   bottom: 0.3rem;
   padding-left: 14.5rem;
 `;
-*/
 export const Fix = styled.img`
   position: relative;
   bottom: 0.3rem;

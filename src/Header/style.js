@@ -22,7 +22,6 @@ export const Logo2 = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 3rem;
-  margin-right: 13.5rem;
 `;
 
 export const Alarm = styled.img`

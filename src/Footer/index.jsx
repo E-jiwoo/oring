@@ -24,6 +24,8 @@ const Footer = () => {
     "/mypage",
     "/detail",
     "/chat_2",
+    "/insert",
+    "/insert_2",
   ];
 
   // Check if the current path is one of the specified paths
@@ -56,12 +58,12 @@ const Footer = () => {
             <S.Text>상품</S.Text>
           </S.Box>
         </Link>
-        <Link to={location.pathname === "/chat" ? "/chat" : "/opinion"}>
+        <Link to={location.pathname === "/chat_2" ? "/chat_2" : "/opinion_2"}>
           <S.Box>
             <S.Icon
               src={
-                location.pathname === "/opinion" ||
-                location.pathname === "/chat"
+                location.pathname === "/opinion_2" ||
+                location.pathname === "/chat_2"
                   ? opinion_on
                   : opinion_off
               }

@@ -38,6 +38,7 @@ const index = () => {
       <S.Container>
         <S.Icon>
           <S.Arrow src={detail_arrow} alt="arrow" onClick={onBack} />
+          <S.Fix src={detail_fix} alt="fix" onClick={onFix} />
         </S.Icon>
         <S.ItemImg src={picnic_green} alt="picnic_green" />
         <S.DetailBox>

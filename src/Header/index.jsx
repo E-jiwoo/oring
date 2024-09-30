@@ -18,13 +18,18 @@ const Header = () => {
   const onHome = () => {
     navigate(`/home`);
   };
+  const onInsert = () => {
+    navigate(`/insert`);
+  };
   return (
     <>
       {location.pathname === "/home" ||
       location.pathname === "/mypage" ||
       location.pathname === "/opinion" ||
       location.pathname === "/conference" ||
-      location.pathname === "/opinion_2" ? (
+      location.pathname === "/opinion_2" ||
+      location.pathname === "/insert" ||
+      location.pathname === "/insert_2" ? (
         <S.Header>
           <S.Logo>
             <S.LogoImg src={logo} alt="logo" onClick={onHome} />
@@ -43,9 +48,9 @@ const Header = () => {
           <S.Logo2>
             <S.LogoImg src={logo} alt="logo" />
             <S.LogoText src={oringE} alt="oringE" />
-            {/*<S.PlusBtn>
+            <S.PlusBtn onClick={onInsert}>
               <S.Btn>재고 추가</S.Btn>
-            </S.PlusBtn>*/}
+            </S.PlusBtn>
           </S.Logo2>
         </S.Header>
       ) : null}
