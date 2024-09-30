@@ -12,8 +12,8 @@ export const Container = styled.div`
 
 export const Profile = styled.img`
   position: relative;
-  width: 128px;
-  height: 128px;
+  width: 110px;
+  height: 110px;
 `;
 
 export const UserName = styled.div`

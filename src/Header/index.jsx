@@ -23,7 +23,8 @@ const Header = () => {
       {location.pathname === "/home" ||
       location.pathname === "/mypage" ||
       location.pathname === "/opinion" ||
-      location.pathname === "/conference" ? (
+      location.pathname === "/conference" ||
+      location.pathname === "/opinion_2" ? (
         <S.Header>
           <S.Logo>
             <S.LogoImg src={logo} alt="logo" onClick={onHome} />
